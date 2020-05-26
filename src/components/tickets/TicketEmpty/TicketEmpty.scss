@@ -1,0 +1,10 @@
+@import '../../../styles/variables';
+
+.ticket-detail__empty {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  color: $color-dark-gray;
+  font-size: 14px;
+}

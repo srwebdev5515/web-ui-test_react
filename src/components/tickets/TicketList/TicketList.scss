@@ -1,0 +1,30 @@
+@import '../../../styles/variables';
+
+.ticket-list {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow: auto;
+
+  &::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+
+    &-track {
+      -webkit-box-shadow: inset 0 0 6px $color-bg;
+    }
+
+    &-thumb {
+      background: $color-gray;
+    }
+  }
+
+  &__search-wrapper {
+    margin-bottom: 8px;
+  }
+
+  &__table {
+    background-color: $color-bg-secondary;
+    flex: 1 0 1px;
+  }
+}

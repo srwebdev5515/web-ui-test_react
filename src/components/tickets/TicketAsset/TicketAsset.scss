@@ -1,0 +1,13 @@
+.ticket-detail__asset {
+  padding: 12px 12px 0;
+
+  > div {
+    margin-bottom: 12px;
+  }
+
+  &__location {
+    .box {
+      margin-right: 4px;
+    }
+  }
+}

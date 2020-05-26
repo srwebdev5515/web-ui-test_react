@@ -1,0 +1,44 @@
+@import '../../../styles/variables';
+
+.ticket-table {
+  &__header {
+    color: $color-dark-gray;
+    text-transform: uppercase;
+
+    > div {
+      font-size: 12px;
+    }
+  }
+
+  &__row {
+    display: grid;
+    grid-template-columns: 1fr 2fr 3fr 1.5fr;
+    align-items: center;
+    font-size: 14px;
+    padding: 0 12px;
+    border-left: 3px solid transparent;
+    cursor: pointer;
+
+    &.active {
+      border-left-color: $border-primary;
+      background-color: $color-active;
+    }
+
+    &__owner {
+      img {
+        width: 32px;
+        height: 32px;
+        border-radius: 16px;
+      }
+    }
+
+    > div {
+      padding: 8px 4px;
+      height: 44px;
+      border-bottom: 1px solid $color-bg;
+      word-break: keep-all;
+      display: flex;
+      align-items: center;
+    }
+  }
+}

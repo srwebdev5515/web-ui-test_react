@@ -1,0 +1,31 @@
+@import '../../../styles/variables';
+
+.ticket-detail {
+  height: 100%;
+  padding: 16px;
+  font-size: 14px;
+
+  label {
+    color: $color-dark-gray;
+    margin-right: 8px;
+    margin-bottom: 4px;
+    display: inline-block;
+  }
+
+  &__header {
+    display: flex;
+    font-size: 12px;
+
+    label {
+      margin-bottom: 0;
+    }
+
+    &__date-updated-wrapper {
+      margin-left: auto;
+    }
+  }
+
+  > section {
+    margin-top: 8px;
+  }
+}

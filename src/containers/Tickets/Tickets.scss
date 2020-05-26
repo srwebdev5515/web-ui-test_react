@@ -1,0 +1,17 @@
+@import '../../styles/variables';
+
+.tickets {
+  display: flex;
+  flex-wrap: wrap;
+
+  &__list-wrapper {
+    width: $sidebar-width;
+    margin-right: 8px;
+    height: 100%;
+  }
+
+  &__detail-wrapper {
+    flex: 1 0 1px;
+    background-color: $color-bg-secondary;
+  }
+}
